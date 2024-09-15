@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+}
+h2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: large;
+}
+p{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: medium; 
+}
+header{
+    padding: 1em;
+    display: grid;
+    place-content: center;
+    background-color: #1a1a1a ;
+    color: white;
+    grid-area: header;
+}
+select{
+    border-radius: 5px;
+    padding: 0 0.5em ;
+}
+button{
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+button:hover{
+    background-color: white;
+    color:#1a1a1a
+}
+nav{
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: nav;
+    background-color: crimson;
+    color: white;
+}
+.menu-desktop{
+    display: none;
+}
+
+img{
+    width: 200px;
+}
+article{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    gap: 1em;
+    padding: 1em;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: grid;
+    place-content: center;
+    padding: 1em;
+    grid-area: foot;
+}
+main{
+    grid-area: main;
+}
+.cards{
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 1em 0;
+}
+.navegacion{
+    display: grid;
+    place-content:center;
+    grid-template-columns: auto 2em 2em 2em 2em 2em auto;
+    padding: 1em;
+}
+@media (min-width: 577px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "nav header"
+        "nav main"
+        "foot main" ;
+        grid-template-columns: 15em 1fr;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 1em 0;
+        width: 80vw;
+    }
+    main{
+        display: grid;
+        place-content: center;
+    }
+    footer{
+        height: 10vh;
+        text-align: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .menu-desktop{
+        display: flex;
+        flex-direction: column;
+        padding: 1em 0;
+
+    }
+    .icono{
+        display: none;
+    }
+    li{
+        list-style: none;
+        padding:0.5em ;
+    }       
+    li:hover{
+        color: #1a1a1a;
+    }
+    .navegacion{
+        display: grid;
+        place-content:center;
+        grid-template-columns: auto 2em 2em 2em 2em 2em auto;
+        padding: 1em;
+    }
+
+} 
