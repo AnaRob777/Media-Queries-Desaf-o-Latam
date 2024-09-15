@@ -90,6 +90,9 @@ main{
     grid-template-columns: auto 2em 2em 2em 2em 2em auto;
     padding: 1em;
 }
+.rrss{
+    text-align: center;
+}
 @media (min-width: 577px) {
     body {
         display: grid;
